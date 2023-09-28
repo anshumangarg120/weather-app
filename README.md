@@ -11,7 +11,7 @@ This web application allows users to check the current weather for a location by
 
 2. **Weather Display**, **Unit Selection**:
    - The app displays the current weather conditions for the specified location.
-   - Weather details include temperature, humidity and wind speed.
+   - Weather details include temperature, humidity and wind speed, and a weather description.
 
 3. **Error Handling**:
    - The app gracefully handles cases where the entered city name is not found or when there is an issue with the API request.
@@ -43,3 +43,4 @@ Enjoy using the Weather Web Application!
 ## Credits
 
 This project was created by Anshuman Garg. Feel free to contact me at anshx108@gmail.com for any questions or feedback.
+

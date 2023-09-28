@@ -87,4 +87,9 @@ body {
   font-size: 28px;
   margin-top: -6px;
 }
+#description{
+  margin-top: 40px;
+  margin-left: 20px;
+  text-align: left;
+}
 
