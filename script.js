@@ -3,13 +3,13 @@
 const apiKey = "41ae1809c4ba02c6abe9058acf6a994c";
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
-
+const apiUrlL = "https://api.openweathermap.org/data/2.5/weather?"
 const searchBox = document.querySelector(".search input");
 const searchBtnC = document.querySelector("#celsius");
 
 const searchBtnF = document.querySelector("#fahrenheit");
 var temp = document.querySelector(".temp");
-// Function to get the user's geolocation and fetch weather data
+// Function to get the user's geolocation 
 function getGeolocationAndFetchWeather() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(async (position) => {
@@ -17,7 +17,9 @@ function getGeolocationAndFetchWeather() {
       const longitude = position.coords.longitude;
 
       // Fetch weather data using geolocation coordinates
-      const response = await fetch(apiUrl + `lat=${latitude}&lon=${longitude}&appid=${apiKey}`);
+      const response = await fetch(
+        apiUrlL + `lat=${latitude}&lon=${longitude}&appid=${apiKey}`
+      );
       if (response.ok) {
           const data = await response.json();
           
@@ -41,7 +43,7 @@ async function checkWeatherC(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
      if (!response.ok) {
      
-       document.querySelector(".city").innerHTML = "Invalid city name";
+       document.querySelector(".city").innerHTML = "city not found";
        document.querySelector(".temp").innerHTML = "...";
        document.querySelector(".humidity").innerHTML = "..%";
        document.querySelector(".wind").innerHTML = "..km/h";
@@ -67,7 +69,7 @@ async function checkWeatherF(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     if (!response.ok) {
       
-       document.querySelector(".city").innerHTML = "Invalid city name";
+       document.querySelector(".city").innerHTML = "city not found";
        document.querySelector(".temp").innerHTML = "...";
        document.querySelector(".humidity").innerHTML = "..%";
        document.querySelector(".wind").innerHTML = "..km/h";
