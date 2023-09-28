@@ -80,6 +80,11 @@ async function checkWeatherC(city) {
     weatherDescription.innerHTML =
       "The weather is currently mist in " + data.name;
   }
+  else {
+    weatherDescription.innerHTML =
+      "There is " + data.weather[0].main + " in " + data.name + " right now.";
+
+  }
 }
 
 searchBtnC.addEventListener("click", () => {
