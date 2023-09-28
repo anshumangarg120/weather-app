@@ -10,6 +10,7 @@ const searchBtnF = document.querySelector("#fahrenheit");
 var temp = document.querySelector(".temp");
 const weatherIcon = document.querySelector(".weather-icon");
 const weatherDescription = document.querySelector("#description");
+const useGeoLocation = document.querySelector(".toggle-slider");
 // Function to get the user's geolocation 
 function getGeolocationAndFetchWeather() {
   if (navigator.geolocation) {
@@ -36,7 +37,7 @@ function getGeolocationAndFetchWeather() {
   }
 }
 
-window.addEventListener("load", getGeolocationAndFetchWeather);
+useGeoLocation.addEventListener("click", getGeolocationAndFetchWeather);
 //// --- 
 
 // --- celsius
@@ -114,14 +115,24 @@ async function checkWeatherF(city) {
 
    if (data.weather[0].main == "Clouds") {
      weatherIcon.src = "images/clouds.png";
+     weatherDescription.innerHTML =
+       "The weather is currently cloudy in " + data.name;
    } else if (data.weather[0].main == "Clear") {
      weatherIcon.src = "images/clear.png";
+     weatherDescription.innerHTML =
+       "The weather is currently clear in " + data.name;
    } else if (data.weather[0].main == "Rain") {
      weatherIcon.src = "images/rain.png";
+     weatherDescription.innerHTML =
+       "The weather is currently rainyin " + data.name;
    } else if (data.weather[0].main == "Drzzle") {
      weatherIcon.src = "images/drzzle.png";
+     weatherDescription.innerHTML =
+       "The weather is currently drzzle in " + data.name;
    } else if (data.weather[0].main == "Mist") {
      weatherIcon.src = "images/mist.png";
+     weatherDescription.innerHTML =
+       "The weather is currently mist in " + data.name;
    }
 }
 

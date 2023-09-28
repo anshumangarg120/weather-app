@@ -21,11 +21,24 @@ This web application allows users to check the current weather for a location by
    - The app is visually appealing with a thoughtfully designed layout and color scheme.
    - It is responsive and functions well on both desktop and mobile devices.
 
+5. **Geolocation (Optional)**:
+   - Users can opt to use their device's geolocation to automatically fetch the weather for their current location.
+   - The app requests and handles geolocation permissions appropriately.
+
+
 ## How to Use
 
-   **Search by City**:
+1. **Search by City**:
    - Enter the name of a city in the search input field.
    - Click the "°C" or "°F" button to retrieve weather data for that city in "Celsius" and "Fahrenheit".
+
+2. **Toggle Temperature Units**:
+   - Use the "Celsius" and "Fahrenheit" buttons to switch between temperature units.
+   - The temperature data will update accordingly.
+
+3. **Geolocation (Optional)**:
+   - Allow the app to use your device's geolocation.
+   - The app will automatically fetch weather data for your current location.
 
 
 ## Additional Information
@@ -34,7 +47,7 @@ This web application allows users to check the current weather for a location by
 
 - Assets: The `images` folder contains icons used in the app's interface. You can replace them with your own if desired.
 
-- Styling: The app's visual style is defined in the `style.css` and `media.css` file. You can customize the styles to fit your preferences.
+- Styling: The app's visual style is defined in the `style.css`, `media.css` and `location-slider.css` file. You can customize the styles to fit your preferences.
 
 Feel free to explore the code in the `script.js` file to see how the app functions.
 

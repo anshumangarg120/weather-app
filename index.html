@@ -8,9 +8,19 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
+    <link rel="stylesheet" href="location-slider.css">
   </head>
   <body>
     <div class="card">
+      <div id="location">
+        <h4>Use your current location</h4>
+        <label>
+          <input type="checkbox" />
+          <div class="toggle-container">
+            <div class="toggle-slider"></div>
+          </div>
+        </label>
+      </div>
       <div class="search">
         <input type="text" placeholder="Enter city name" spellcheck="false" />
         <button id="celsius">°C</button>
@@ -19,7 +29,7 @@
 
       <div class="weather">
         <img src="images/rain.png" class="weather-icon" />
-        
+
         <h1 class="temp">21°C</h1>
         <h2 class="city">Ecuador</h2>
         <div class="details">
@@ -39,10 +49,9 @@
           </div>
         </div>
         <div id="description">
-            <h3> Weather Description</h3>
+          <h3>Weather Description</h3>
         </div>
       </div>
-      
     </div>
     <script src="script.js"></script>
   </body>

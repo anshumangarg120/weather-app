@@ -10,6 +10,15 @@
 body {
   background-color: #222;
 }
+#location{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 20px;
+}
+#location h4 {
+  margin-right: 10px;
+}
 .card {
   width: 90%;
   max-width: 470px;

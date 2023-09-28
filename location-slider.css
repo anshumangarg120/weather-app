@@ -1,0 +1,38 @@
+.toggle-container {
+            display: inline-block;
+            position: relative;
+            width: 30px;
+            height: 15px;
+            background-color: #ccc;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 15px;
+            height: 15px;
+            background-color: #000000;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        /* Style for the on and off labels */
+        .toggle-label {
+            font-size: 4px;
+            margin-left: 10px;
+        }
+
+        
+
+        /* Checkbox input to handle the state */
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        /* Hide the slider when the checkbox is checked */
+        input[type="checkbox"]:checked + .toggle-container .toggle-slider {
+            left: 15px;
+        }
