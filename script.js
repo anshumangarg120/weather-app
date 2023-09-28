@@ -70,7 +70,7 @@ async function checkWeatherC(city) {
   } else if (data.weather[0].main == "Rain") {
     weatherIcon.src = "images/rain.png";
     weatherDescription.innerHTML =
-      "The weather is currently rainyin " + data.name;
+      "The weather is currently rainy in " + data.name;
   } else if (data.weather[0].main == "Drzzle") {
     weatherIcon.src = "images/drzzle.png";
     weatherDescription.innerHTML =
@@ -116,7 +116,7 @@ async function checkWeatherF(city) {
   } else if (data.weather[0].main == "Rain") {
     weatherIcon.src = "images/rain.png";
     weatherDescription.innerHTML =
-      "The weather is currently rainyin " + data.name;
+      "The weather is currently rainy in " + data.name;
   } else if (data.weather[0].main == "Drzzle") {
     weatherIcon.src = "images/drzzle.png";
     weatherDescription.innerHTML =
