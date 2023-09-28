@@ -8,11 +8,19 @@
   padding: 0px 0px;
 }
 .search {
- padding: 5vw;
+ padding: 50px 10px 5px 20px;
   width: 100%;
+}
+.search input {
+  padding: 20px 15px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 6px;
 }
 .search button {
   margin: 4px;
+  height: 10vw;
+  width: 10vw;
 }
 .weather-icon {
   width: 100px;
@@ -26,6 +34,7 @@
 }
 .details {
   margin-top: 55px;
+  padding: 0 40px;
 }
 
 .col img {

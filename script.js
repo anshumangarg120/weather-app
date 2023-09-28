@@ -41,7 +41,7 @@ async function checkWeatherC(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
      if (!response.ok) {
      
-       document.querySelector(".city").innerHTML = "Wrong city name";
+       document.querySelector(".city").innerHTML = "Invalid city name";
        document.querySelector(".temp").innerHTML = "...";
        document.querySelector(".humidity").innerHTML = "..%";
        document.querySelector(".wind").innerHTML = "..km/h";
@@ -67,7 +67,7 @@ async function checkWeatherF(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     if (!response.ok) {
       
-       document.querySelector(".city").innerHTML = "Wrong city name";
+       document.querySelector(".city").innerHTML = "Invalid city name";
        document.querySelector(".temp").innerHTML = "...";
        document.querySelector(".humidity").innerHTML = "..%";
        document.querySelector(".wind").innerHTML = "..km/h";
